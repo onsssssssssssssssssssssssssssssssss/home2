@@ -1,0 +1,279 @@
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:ital,wght@0,200;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:ital,wght@0,200;1,700&family=Varela+Round&display=swap');
+
+body{
+  margin:0;
+  color:whitesmoke;
+  background:#c8c8c8;
+  font:600 16px/18px 'Open Sans',sans-serif;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 3px;
+
+}
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+  width:100%;
+  margin:auto;
+ height: 100%;
+  position:relative;
+  background:url(https://entreprise.kedge.edu/var/kedge/storage/images/_aliases/slider/media/images/article/professionel/slider_article_intra_1040x500/949363-2-fre-FR/slider_article_intra_1040x500.png) no-repeat center;
+  box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  background-size: cover;
+
+}
+.login-html{
+  width:100%;
+  height:100%;
+  position:absolute;
+  padding:100px 50px 30px 50px;
+    background: rgb(40 101 78 / 60%);
+
+    float: center;
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  position:absolute;
+  transform:rotateY(180deg);
+  backface-visibility:hidden;
+  transition:all .4s linear;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2.5px;
+
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+  display:none;
+
+
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+  text-transform:uppercase;
+
+}
+.login-html .tab{
+  font-size:22px;
+  margin-right:200px;
+  padding-bottom:5px;
+  display:inline-block;
+  border-bottom:2px solid transparent;
+    margin-left: 350px;
+    margin-top: 95px;
+    margin-bottom: 20px;
+
+
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+  color:#fff;
+border :none;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 2.5px;
+    margin-left: 350px;
+    margin-right: 200px;
+
+
+}
+.login-form{
+  min-height:100px;
+  position:relative;
+  perspective:1000px;
+  transform-style:preserve-3d;
+      float: center;
+
+
+
+}
+.login-form .group .button {
+  font-size: 20px;
+}
+.login-form .group{
+  margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+  width:50%;
+  color:#F8F8FF;
+
+  display:block;
+  float: center;
+  margin-left: 550px;
+  letter-spacing: 3px;
+
+
+}
+.login-form .group .input,
+.login-form .group .button{
+  border:none;
+  padding:15px 20px;
+  background:white;
+font-family: 'Source Sans Pro', sans-serif;
+letter-spacing: 2px;
+font-weight: 500px;
+width: 400px;
+  letter-spacing:4px;
+
+
+
+}
+.login-form .group input[data-type="password"]{
+  text-security:circle;
+  -webkit-text-security:circle;
+}
+.login-form .group .label{
+  color:white;
+  font-size:12px;
+font-family: 'Source Sans Pro', sans-serif;
+}
+.login-form .group .button{
+  background:#1161ee;
+}
+.login-form .group label .icon{
+  width:15px;
+  height:15px;
+  border-radius:2px;
+  position:relative;
+  display:inline-block;
+  background:rgba(255,255,255,.1);
+    margin-left: 350px;
+
+
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+  content:'';
+  width:10px;
+  height:2px;
+  background:#fff;
+  position:absolute;
+  transition:all .2s ease-in-out 0s;
+
+}
+.login-form .group label .icon:before{
+  left:3px;
+  width:5px;
+  bottom:6px;
+  transform:scale(0) rotate(0);
+
+}
+.login-form .group label .icon:after{
+  top:6px;
+  right:0;
+  transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+  color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+  background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+  transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+  transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+  transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+  transform:rotate(0);
+}
+
+.hr{
+  margin:40px 0 40px 0;
+  background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+  text-align:center;
+  margin-left: 90px;
+  letter-spacing: 3px;
+font-family: 'Varela Round', sans-serif;
+}
+</style><!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Login</title>
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Source+Sans+Pro:ital,wght@0,200;1,700&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+<div class="login-wrap">
+  <div class="login-html">
+    <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    
+    <div class="login-form">
+      <div class="sign-in-htm">
+        <div class="group">
+          <label for="user" class="label" >Username</label>
+          <input id="user" type="text" class="input" style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password"style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <input id="check" type="checkbox" class="check" checked>
+          <label for="check" style="  margin-left: 200px;"><span class="icon"></span> Keep me Signed in</label>
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign In" style="background-color: black;">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <a href="#forgot">Forgot Password?</a>
+        </div>
+      </div>
+      <div class="sign-up-htm">
+        <div class="group">
+          <label for="user" class="label">Username</label>
+          <input id="user" type="text" class="input" style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Password</label>
+          <input id="pass" type="password" class="input" data-type="password" style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Repeat Password</label>
+          <input id="pass" type="password" class="input" data-type="password" style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <label for="pass" class="label">Email Address </label>
+          <input id="pass" type="text" class="input" style="color:black; font-family: arial;font-family: 'Source Sans Pro', sans-serif; letter-spacing: 1px;font-weight: bold;font-size: 15px;">
+        </div>
+        <div class="group">
+          <input type="submit" class="button" value="Sign Up" style="background-color: black;">
+        </div>
+        <div class="hr"></div>
+        <div class="foot-lnk">
+          <label for="tab-1">Already Member?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

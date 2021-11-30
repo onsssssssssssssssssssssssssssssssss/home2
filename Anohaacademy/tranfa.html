@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SPEED UP YOUR TRANSFORMATIONS </title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="#" rel="icon">
+  <link href="#" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.2.1
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+#hero1 {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  border-color: black;
+}
+.font{
+ font-weight: bold;
+}
+.learn{
+  background-color: #5fcf80;
+  color: white;
+  border: none;
+  width: 400px;
+  height: 50px;
+  text-align: center;
+}
+ul{
+  list-style: none;
+
+}
+@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+:root {
+  --d: 700ms;
+  --e: cubic-bezier(0.19, 1, 0.22, 1);
+  --font-sans: 'Rubik', sans-serif;
+  --font-serif: 'Cardo', serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.page-content {
+  height: auto;
+  display: grid;
+  grid-gap: 1rem;
+  padding: 20px;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: var(--font-sans);
+}
+@media (min-width: 600px) {
+  .page-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 800px) {
+  .page-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: end;
+          align-items: flex-end;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  color: whitesmoke;
+  background-color: whitesmoke;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 600px) {
+  .card {
+    height: 300px;
+  }
+}
+.card:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 110%;
+  background-size: cover;
+  background-position: 0 0;
+  -webkit-transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: -webkit-transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e);
+  transition: transform calc(var(--d) * 1.5) var(--e), -webkit-transform calc(var(--d) * 1.5) var(--e);
+  pointer-events: none;
+}
+.card:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  pointer-events: none;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), color-stop(11.7%, rgba(0, 0, 0, 0.009)), color-stop(22.1%, rgba(0, 0, 0, 0.034)), color-stop(31.2%, rgba(0, 0, 0, 0.072)), color-stop(39.4%, rgba(0, 0, 0, 0.123)), color-stop(46.6%, rgba(0, 0, 0, 0.182)), color-stop(53.1%, rgba(0, 0, 0, 0.249)), color-stop(58.9%, rgba(0, 0, 0, 0.32)), color-stop(64.3%, rgba(0, 0, 0, 0.394)), color-stop(69.3%, rgba(0, 0, 0, 0.468)), color-stop(74.1%, rgba(0, 0, 0, 0.54)), color-stop(78.8%, rgba(0, 0, 0, 0.607)), color-stop(83.6%, rgba(0, 0, 0, 0.668)), color-stop(88.7%, rgba(0, 0, 0, 0.721)), color-stop(94.1%, rgba(0, 0, 0, 0.762)), to(rgba(0, 0, 0, 0.79)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: -webkit-transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e);
+  transition: transform calc(var(--d) * 2) var(--e), -webkit-transform calc(var(--d) * 2) var(--e);
+}
+.card:nth-child(1):before {
+  background-color: #5fcf80;
+}
+.card:nth-child(2):before {
+    background-color: #5fcf80;
+}
+.card:nth-child(3):before {
+    background-color: #5fcf80;
+
+}
+.card:nth-child(4):before {
+    background-color: #5fcf80;
+}
+.card:nth-child(5):before {
+    background-color: #5fcf80;
+}
+
+.content {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 1rem;
+  -webkit-transition: -webkit-transform var(--d) var(--e);
+  transition: -webkit-transform var(--d) var(--e);
+  transition: transform var(--d) var(--e);
+  transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
+  z-index: 1;
+}
+.content > * + * {
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+margin-bottom: 10px;  
+}
+
+.copy {
+  font-family: var(--font-serif);
+  font-size: 1.125rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.btn {
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.65rem;
+  font-weight: bold;
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+  color: white;
+  background-color: black;
+  border: none;
+}
+.btn:hover {
+  background-color: #0d0d0d;
+}
+.btn:focus {
+  outline: 1px dashed yellow;
+  outline-offset: 3px;
+}
+
+@media (hover: hover) and (min-width: 600px) {
+  .card:after {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  .content {
+    -webkit-transform: translateY(calc(100% - 4.5rem));
+            transform: translateY(calc(100% - 4.5rem));
+  }
+  .content > *:not(.title) {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    -webkit-transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e);
+    transition: transform var(--d) var(--e), opacity var(--d) var(--e), -webkit-transform var(--d) var(--e);
+  }
+
+  .card:hover,
+  .card:focus-within {
+    -webkit-box-align: center;
+            align-items: center;
+  }
+  .card:hover:before,
+  .card:focus-within:before {
+    -webkit-transform: translateY(-4%);
+            transform: translateY(-4%);
+  }
+  .card:hover:after,
+  .card:focus-within:after {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .card:hover .content,
+  .card:focus-within .content {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .card:hover .content > *:not(.title),
+  .card:focus-within .content > *:not(.title) {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    -webkit-transition-delay: calc(var(--d) / 8);
+            transition-delay: calc(var(--d) / 8);
+  }
+
+  .card:focus-within:before, .card:focus-within:after,
+  .card:focus-within .content,
+  .card:focus-within .content > *:not(.title) {
+    -webkit-transition-duration: 0s;
+            transition-duration: 0s;
+  }
+}
+#footer{
+  width: 100%;
+}
+span{
+  font-weight: bold;
+}
+</style>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="index.html">Anoha Academy</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="drop-down"><a href="index.html">Solutions</a>
+                    <ul>
+
+              <li><a href="interintra.html">Train inter and intra</a></li>
+              <li><a href="tranfa.html">Speed up your transformations</a></li>
+              <li><a href="#">Deploy international projects</a></li>
+              <li><a href="#">Digital learning & Innovation</a></li>
+              <li><a href="#">E-learning training</a></li>
+            </ul>
+          </li>
+
+          <li class="drop-down"><a >Areas of training</a>
+           <ul>
+              <li><a href="#">Purchases</a></li>
+              <li><a href="#">ATLAS</a></li>
+              <li><a href="#">Organization</a></li>
+              <li><a href="#">Audit -  - Consulting</a></li>
+              <li><a href="#">Self-employed</a></li>
+              <li><a href="#">Bank</a></li>
+              <li><a href="#">Office - DTP / CAD</a></li>
+              <li><a href="#">Coaching</a></li>
+              <li><a href="#">Commercial - Sales</a></li>
+              <li><a href="#">Communication</a></li>
+               <li><a href="#">Accounting - Taxation</a></li>
+              <li><a href="#">Change management</a></li>
+              <li><a href="#">Management control</a></li>
+              <li><a href="#">Certification cycles</a></li>
+              <li><a href="#">Personal development</a></li>
+            </ul>
+          </li>
+          <li class="drop-down"><a href="courses.html">You are</a>
+                <ul>
+
+              <li><a href="#">A company</a></li>
+              <li><a href="#">An Sme</a></li>
+              <li><a href="#">A public institution </a></li>
+              <li><a href="#">A participant</a></li>
+            </ul>
+          </li>
+
+
+
+          <li class="drop-down"><a href="trainers.html">CNPFF|Fundding</a>
+            <ul>
+
+              <li><a href="#">Training Account - CPF</a></li>
+              <li><a href="#">OPCO financing</a></li>
+              <li><a href="#">FNE Training</a></li>
+              <li><a href="#">Collective Transitions</a></li>
+            </ul>
+          </li>
+          <li  class="drop-down"><a href="events.html">Resources</a>
+           <ul>
+              <li><a href="#">Blogs from our expert</a></li>
+              <li><a href="#">Digital learning from our experts </a></li>
+              <li><a href="#">FNE Training</a></li>
+            </ul>
+          </li>
+         
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="events.html">Event</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+
+      <a href="learninghub.html" class="get-started-btn">Learninghub</a>
+
+    </div>
+  </header><!-- End Header -->
+
+  
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+       
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+      
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          </div>
+           <div class="section-title">
+          <p style="margin-left: 250px;">Speed up your transformations</p>
+        </div>
+         
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Why Us Section ======= -->
+
+   
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+      <div class="row">
+          <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          </div>
+        <main class="page-content">
+          
+  <div class="card">
+    <div class="content">
+
+      <h2 class="title">skills trades</h2>
+      <p class="copy">Promote the rapid adoption of new processes and tools (upskilling, reskilling, etc.).</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Behavioral skills</h2>
+      <p class="copy">Develop and generalize softskills: creativity, collaboration, lifelong learning ...</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title">Managerial skills</h2>
+      <p class="copy">Support the evolution of management methods for more agile, committed and responsible teams.</p>
+    </div>
+  </div>
+  <div class="card">
+    <div class="content">
+      <h2 class="title" style="margin-bottom:0px;">
+Learning & Development skills</h2>
+      <p class="copy">Optimize your training actions and your learning strategies for the benefit of business.</p>
+    </div>
+
+  </div>
+
+</main>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+     <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+      
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-4" data-aos="fade-left" data-aos-delay="100">
+            <p style="margin-top: 80px">
+            We are living in a context of massive and accelerated transformations: digital revolution, automation, uberization, search for meaning and societal utility ... <br>
+At Anoha, we are convinced that skills development meets a double challenge: <br>
+ <span> Business competitiveness :</span>skills constitute an increasingly strategic intangible capital. <br>
+ <span>Employee employability : </span> the risk of their skills becoming obsolete has never been higher.</p>
+          </div>
+ <img src="assets/img/about.jpg" class="img-fluid" style="max-width: 40%;" alt="">
+
+         
+    </section><!-- End Counts Section -->
+  <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+       
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2 " aos-init aos-animate data-aos-delay="100">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+           
+  <div class="col-lg-6 order-1 order-lg-4" data-aos="fade-left" data-aos-delay="100">   <p style="margin-top: 80px" ><span>Develop collective performance by strengthening the skills of managers</span></p><br><p>
+Anoha has designed and deployed support for front-line managers and supervisors. This interactive and engaging approach has made it possible to develop exceptional team management, based on “interpersonal skills”, and not only on “know-how”.</p>
+<p>
+Today, an international team of 30 certified trainers ensures the deployment and nearly 1,000 team leaders have already optimized their practices.</p>
+ </div>
+        </div>
+
+      </div>
+    </section>
+ <section id="counts" class="counts section-bg">
+      <div class="container">
+
+      
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+          </div>
+           <div class="section-title">
+          <p>How to accelerate growth to effectively develop your business?
+</p>
+        </div>
+        <p>
+         In an ever-changing world, businesses are forced to act quickly to stay ahead of the curve. However, too rapid a transformation can cripple or destroy an organization.</p>
+         <p>
+           This paradox was discussed at the last Business Transformation Summit organized by Cegos in 4 countries in October 2019. Discover the views of experts, whether they are business leaders or researchers, gathered in this white paper.
+         </p>
+<input type="button" value="Download the white paper" style="border:none;margin-left:400px;background-color: #5fcf80;color: white;width:300px;height: 40px;">
+    </section><!-- End Counts Section -->
+ <section id="hero1" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1>
+Entrust your project to our experts</h1>
+
+ <div class="card" style="width: 18rem;margin-left: 400px;">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <p class="card-text"></p>
+  </div>
+</div>
+<input type="button" value="Contact us" style="border:none;margin-left:400px;background-color: #5fcf80;color: white;height: 40px;margin-left: 500px;margin-top: 10px;">
+    </div>
+  </section><!-- End Hero -->
+</main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>Anoha Academy</h3>
+            <p>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Anoha Academy</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
